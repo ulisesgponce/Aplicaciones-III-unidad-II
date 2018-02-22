@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_room"
+        android:textSize="@dimen/size_title1"
+        android:layout_marginTop="@dimen/margin_title_room"
+        android:textStyle="bold" />
+
+    <ImageSwitcher
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/heigth_room_suite"
+        android:background="@drawable/room_suite"
+        android:id="@+id/imv_room_suite"
+        android:layout_below="@id/title_room"
+        android:layout_margin="@dimen/margin_room">
+
+    </ImageSwitcher>
+    <TextView
+        android:id="@+id/imv_360"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_room"
+        android:textSize="@dimen/size_title1"
+        android:layout_below="@id/imv_room_suite"
+        android:layout_marginTop="@dimen/txt_suite"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/image_360"
+        android:textSize="@dimen/size_title3"
+        android:id="@+id/txv_360"
+        android:layout_below="@id/imv_room_suite"
+        android:layout_marginLeft="@dimen/left_suite"
+        android:layout_marginTop="@dimen/margin_room_suite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_description_room"
+        android:textSize="@dimen/size_title3"
+        android:id="@+id/txv_description"
+        android:layout_below="@id/txv_360"
+        android:layout_marginLeft="@dimen/left_description"
+        android:layout_marginTop="@dimen/margin_room_description"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description_room_suite"
+        android:textSize="@dimen/size_text_smal"
+        android:textStyle="italic"
+        android:id="@+id/txv_text_description"
+        android:layout_below="@id/txv_description"
+        android:layout_marginLeft="@dimen/dedication_small_room"/>
+
+    <TextView
+        android:id="@+id/txv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_price"
+        android:layout_below="@id/txv_text_description"
+        android:textSize="@dimen/size_title3"
+        android:layout_marginLeft="@dimen/margin_price"/>
+    <TextView
+        android:id="@+id/txv_text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prize_room_suite"
+        android:layout_marginLeft="left_description"
+        android:textSize="@dimen/size_text"
+        android:layout_below="@id/txv_text_description"
+        android:layout_marginTop="@dimen/description_room_suite"
+        android:textColor="@color/txt_suite"/>
+
+    <Button
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/heigth_button"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/button_reserve"
+        android:textStyle="italic"
+        android:background="@color/color_boton"
+        android:textColor="@colort/txt_color_button"
+        android:layout_below="@id/txv_text_description"
+        android:layout_marginTop="@dimen/margin_button"
+        android:layout_marginLeft="@dimen/left_button"
+        android:id="@+id/btn_reseve"
+
+
+        />
+    </RelativeLayout>
+

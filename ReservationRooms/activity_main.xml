@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mx.edu.utng.ugarcia.reservationrooms.ReservationRooms"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="@dimen/width_customer"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_customer"
+        android:text="@string/customer"
+        android:textSize="@dimen/txt_normal"
+        />
+
+
+    <EditText
+        android:layout_width="@dimen/edit_customer"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_edit_customer"
+        android:id="@+id/edt_name"
+        android:textSize="@dimen/txtNormal"
+        />
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/calendar_entry"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/entry_margin"
+        android:layout_marginLeft="@dimen/entry_margin_left"
+        android:text="@string/entry"
+        android:textSize="@dimen/txtNormal"
+        />
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_calendar1"></CalendarView>
+
+    <TextView
+        android:layout_width="@dimen/calendar_exit"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/exit_margin_top"
+        android:layout_marginLeft="@dimen/exit_margin_left"
+        android:text="@string/calendar_exit
+        android:textSize="@dimen/txtNormal"
+        />
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_calendar_exit"></CalendarView>
+
+
+        <TextView
+            android:id="@+id/type_room"
+            android:layout_width="@dimen/width_room"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_room"
+            android:layout_marginTop="@dimen/margint_top_room"
+            android:text="@string/type_room"
+            android:textSize="@dimen/txtNormal" />
+        <TextView
+            android:layout_width="@dimen/total_width"
+            android:layout_height="@dimen/total_heigth"
+            android:layout_marginTop="@dimen/margin_top_total"
+            android:layout_marginLeft="@dimen/margin_left_total"
+            android:text="@string/total"
+            android:textSize="@dimen/txtNormal"
+            />
+
+
+    <Button
+        android:layout_width="@dimen/width_button"
+        android:layout_height="@dimen/heigth_button"
+        android:text="@string/reservation"
+        android:layout_marginTop="@dimen/margin_button"
+        android:layout_marginLeft="@dimen/margin_left_button"
+        android:textSize="@dimen/txt_size_button"
+        android:id="@+id/btn_addition"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="@dimen/size_margin"
+        android:stretchColumns="5"
+        android:gravity="center"
+        android:layout_marginTop="2pt">
+
+        <TableRow   android:layout_marginTop="@dimen/margin_table">
+            <TextView
+                android:id="@+id/titulo_gestion_clientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gestión de ofertas"
+                android:textSize="@dimen/size_titulo1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/margin"
+                android:layout_span="@dimen/span"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/values"
+            android:layout_marginBottom="@dimen/size_margin"
+            >
+
+            <TextView
+                android:id="@+id/id_title_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="@dimen/txt_size"
+                android:textStyle="bold"
+                android:padding="@dimen/padding"
+                android:background="@color/color_table"
+                />
+
+            <TextView
+                android:id="@+id/nombre_titulo_oferta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_offer"
+                android:padding="@dimen/padin_title"
+                android:textSize="@string/txt_size_title"
+                android:textStyle="bold"
+                android:background="@color/txt"/>
+
+            <TextView
+                android:id="@+id/costo_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/normal_cost"
+                android:padding="@dimen/dimen_cost"
+                android:textSize="@dimen/size_cost"
+                android:textStyle="bold"
+                android:background="@color/color_cost"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/discount_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_offer"
+                android:gravity="center"
+                android:padding="@dimen/padding_offer"
+                android:text="@string/offer_discount"
+                android:textSize="@dimen/txt_size_discount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/operation_title_customer"
+                android:layout_width="@dimen/title_customer"
+                android:layout_height="wrap_content"
+                android:layout_span="@dimen/row_customer"
+                android:background="@color/color_customer"
+                android:gravity="center"
+                android:padding="@dimen/pading_customer"
+                android:text="@string/txt_operation"
+                android:textSize="@dimen/size_txt_customer"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margint_table_row">
+
+            <TextView
+                android:id="@+id/offer_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/id_offer" />
+            <TextView
+                android:id="@+id/offer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reservation" />
+            <TextView
+                android:id="@+id/offer_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/price" />
+            <TextView
+                android:id="@+id/offer_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@dimen/price_discount" />
+            <TextView
+                android:id="@+id/edit_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/offer_offer"
+                android:layout_marginLeft="@dimen/margin_edit"/>
+                />
+
+            <ImageButton
+                android:layout_width="@dimen/width_button"
+                android:layout_height="@dimen/height_button"
+                android:layout_marginTop="@dimen/margin_image"
+                android:src="@drawable/edit"
+                android:contentDescription="@string/edit_image"
+                android:id="@+id/btn_edit_customer"
+                android:onClick="nextActivity"/>
+
+            <TextView
+                android:id="@+id/delete_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/delete" />
+            />
+
+            <ImageButton
+                android:layout_width="@dimen/width_button_delete"
+                android:layout_height="@dimen/height_button_delete"
+                android:layout_marginTop="@dimen/margin_delete"
+                android:src="@drawable/delete"
+                android:contentDescription="@string/delete_button"
+                android:id="@+id/btn_delete_customer"/>
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
